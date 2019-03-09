@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Calendar;
+
 public class FirstActivity extends AppCompatActivity {
     TextView txtvwAge;
     EditText edtName, edtYear;
@@ -33,7 +35,8 @@ public class FirstActivity extends AppCompatActivity {
     public void fnGreet(View vw){
         String strName = edtName.getText().toString().trim();
         int year = Integer.parseInt(edtYear.getText().toString().trim());
-        txtvwAge.setText("Hello and welcome "+strName+". You are "+(2019-year)+" years old.");
+        txtvwAge.setText("Hello and welcome "+strName+". You are "+
+                (Calendar.getInstance().get(Calendar.YEAR)-year)+" years old.");
     }
 
     public void fnThreadedActivity(View vw){
@@ -45,7 +48,7 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(requestCode!=RESULT_OK){
+        if(resultCode==RESULT_OK){
         super.onActivityResult(requestCode,resultCode,data);
 
         Bitmap bp = (Bitmap) data.getExtras().get("data");

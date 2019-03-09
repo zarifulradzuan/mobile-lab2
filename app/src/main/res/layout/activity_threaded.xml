@@ -35,25 +35,11 @@
         android:id="@+id/btnTakePic"
         android:layout_width="158dp"
         android:layout_height="37dp"
-        android:layout_marginBottom="34dp"
         android:onClick="fnTakePic"
         android:text="TAKE PICTURE!"
-        app:layout_constraintBottom_toTopOf="@+id/btnBack"
         app:layout_constraintEnd_toEndOf="@+id/txtVwHello"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/txtVwHello"
         app:layout_constraintTop_toBottomOf="@+id/txtVwHello" />
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="171dp"
-        android:onClick="fnBack"
-        android:text="BACK"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnTakePic"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/btnTakePic"
-        app:layout_constraintTop_toBottomOf="@+id/btnTakePic" />
 </android.support.constraint.ConstraintLayout>

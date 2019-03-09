@@ -36,7 +36,7 @@
     <Button
         android:id="@+id/btnMe"
         android:layout_width="221dp"
-        android:layout_height="0dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="33dp"
         android:onClick="fnThreadedActivity"
         android:text="CLICK ME!"
@@ -61,8 +61,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="181dp"
-        android:layout_height="198dp"
+        android:layout_width="144dp"
+        android:layout_height="114dp"
         android:layout_marginTop="151dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/editName"

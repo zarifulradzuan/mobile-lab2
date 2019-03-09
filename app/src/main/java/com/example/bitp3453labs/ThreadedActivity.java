@@ -47,10 +47,9 @@ public class ThreadedActivity extends AppCompatActivity {
         super.onActivityResult(requestCode,resultCode,data);
         Bitmap bp = (Bitmap) data.getExtras().get("data");
         iv.setImageBitmap(bp);
-        //setResult(RESULT_OK,data);
-    }
-
-    public void fnBack(View vw){
-        finish();
+        if(resultCode==RESULT_OK)
+            setResult(RESULT_OK,data);
+        else
+            setResult(RESULT_CANCELED);
     }
 }
